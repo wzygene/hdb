@@ -1,0 +1,170 @@
+@import './color.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+}	
+html, body {
+  font-family: "Microsoft YaHei","PingFang Regular";
+  min-width: 903px;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+clearfixed::after {
+  content: '';
+  display: block;
+  clear: both;
+  overflow: hidden;
+  height: 0;
+  line-height: 0;
+}
+input, button {
+  outline: none;
+  background-color: #fff;
+  border-radius: 6px;
+  border: none;
+}
+.el-button--warning {
+  background-color: $mainColor;
+}
+body {
+  background-color: #f9f9f9;
+}
+.mr200 {
+  margin-right: 340px;
+}
+.pr200 {
+  padding-right: 340px;
+}
+
+// 重置 elementui 的默认样式
+.el-table {
+  border: none;
+  color: #999;
+  &::before {
+    height: 0;
+  }
+  &::after {
+    height: 0;
+  }
+}
+.el-table td, .el-table th.is-leaf {
+  border: none ;
+}
+.el-table th {
+  background-color: #fff;
+}
+.el-table__footer-wrapper thead div, .el-table__header-wrapper thead div {
+  background-color: #fff;
+}
+.el-table__footer-wrapper thead div, .el-table__header-wrapper thead div {
+  color: #666;
+}
+.el-table tr.warning-row {
+  background-color: #f9f9f9;
+}
+.el-table .cell {
+  text-align: center;
+}
+
+.el-input__inner {
+  color: #666;
+  &:hover {
+    border-color: $mainColor;
+  }
+  &:focus {
+    border-color: $mainColor;
+  }
+}
+.el-input__inner, .el-button {
+  font-family: 'Microsoft YaHei', 'PingFang Regular';
+  height: 40px;
+  border-color: $borderColor;
+}
+.el-dropdown-menu__item + .el-dropdown-menu__item {
+  border-top: 1px solid $borderColor;
+}
+.el-table th>.cell {
+  height: 55px;
+  line-height: 55px;
+}
+.el-table .cell {
+  height: 50px;
+  line-height: 50px;
+}
+.el-range-input::-webkit-input-placeholder, .el-input__inner::-webkit-input-placeholder{
+  color:#e0e0e0 !important;
+}
+.el-range-input::-moz-placeholder, .el-input__inner::-moz-placeholder{
+  color:#e0e0e0 !important;
+}
+.el-range-input:-moz-placeholder, .el-input__inner:-moz-placeholder{
+  color:#e0e0e0 !important;
+}
+.el-range-input:-ms-input-placeholder, .el-input__inner:-ms-input-placeholder{
+  color:#e0e0e0 !important;
+}
+.el-range-editor.is-active, .el-range-editor.is-active:hover {
+  border-color: $borderColor;
+}
+.el-date-editor .el-range-separator {
+  color: #666;
+}
+.el-pager li {
+  margin-left:8px;
+  border-radius: 3px;
+  color: $mainColor;
+  font-weight: 400;
+  border: 1px solid $mainColor;
+  box-sizing: border-box;
+  padding: 0 10px;
+  &.active {
+    border: none;
+    background-color: $mainColor;
+    color: white;
+    &:hover {
+      color: white;
+    }
+    &+li {
+      border-left: 1px solid $mainColor;
+    }
+  }
+  &:last-child {
+    margin-right: 8px;
+  }
+  &:hover {
+    color: $mainColor;
+  }
+}
+.el-table td, .el-table th {
+  padding: 0;
+}
+.el-pagination .btn-next, .el-pagination .btn-prev {
+  border: 1px solid $mainColor;
+  color: $mainColor;
+}
+.el-pagination__jump {
+  color: $mainColor;
+}
+.el-pagination button.disabled, .el-pagination button:hover {
+  color: $mainColor;
+}
+.el-input el-pagination__editor input {
+  border-color: $mainColor;
+  color: $mainColor;
+}
+.is-in-pagination .el-input__inner {
+  border-color: $mainColor;
+  color: $mainColor;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
